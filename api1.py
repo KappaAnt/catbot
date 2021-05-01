@@ -1,5 +1,6 @@
 import requests
 import json
+import os
 from PIL import Image
 
 
@@ -10,7 +11,7 @@ class CatPic:
         args: none
         returns: none
         """ 
-        self.api1_key = "?api_key=e4e3d41a-8e34-449c-b8cd-57cd21e0f42e"
+        self.api1_key = os.environ["PIC_TOKEN"]
         self.api_url = "https://api.thecatapi.com/v1/images/search" + self.api1_key
         self.request = ""
         self.request_final = ""

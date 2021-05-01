@@ -1,4 +1,5 @@
 import discord
+import os
 from discord.ext import commands
 from api1 import CatPic
 from api2 import CatFact
@@ -40,7 +41,7 @@ def Command():
             #await channel.send("Hello")
         #now we have to reset the pic and fact
     
-    client.run("ODM4MTUwMzY0MDAzNDM0NTc2.YI26Wg.KVwoLnOKt4bUIkmB_auzqSduXps")
+    client.run(os.environ["DISCORD_TOKEN"])
     
     
 def main():

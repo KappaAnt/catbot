@@ -1,5 +1,6 @@
 import requests
 import json
+import os
 
 class CatFact:
     def __init__(self):
@@ -11,7 +12,7 @@ class CatFact:
         #Originally I had daily cat facts, but it refused to work
         #after I initially ran one fact. Im guessing its time constrained
         #SO.. I switched to this cat fact api!
-        self.api_url = "https://catfact.ninja/fact?max_length=140"
+        self.api_url = os.environ["FACT_TOKEN"]
         self.request = ""
         self.fact_json = ""
         self.condition = True
