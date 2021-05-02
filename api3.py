@@ -41,7 +41,7 @@ class CatGif:
         if self.condition == True:
             #Creating File from Data
             with open("cat_gif.gif", "wb") as f:
-                f.write(self.request_final.content)
+                f.write(self.request.content)
                 
 
         else:
