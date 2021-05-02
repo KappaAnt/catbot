@@ -43,7 +43,7 @@ def Command():
         #now we have to reset the pic and fact
         
     @client.command(aliases=["catgif","CatGif","cgif","CGIF","pur","PUR"])
-    async def cat(ctx):
+    async def CATGIF(ctx):
         cat_gif = CatGif()
         cat_gif.get()
         cat_gif.useData()
